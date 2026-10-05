@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santayo | Gorras Exclusivas - Línea Agropecuaria y Urbana</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.ico" />
+
+    <!-- Tailwind CSS Play CDN con configuración de Modo Oscuro por Clases -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              brand: { dark: "#050505", light: "#f9fafb" },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Tipografía del sistema y estilos base corporativos -->
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-50 text-gray-900 dark:bg-[#050505] dark:text-gray-100 antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-300"
+  >
+    <!-- HEADER / NAVEGACIÓN -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-3">
+          <!-- Logotipo en miniatura con estilo moderno -->
+          <img
+            src="assets/img/logo.png"
+            alt="Logo Santayo"
+            class="w-1/3 h-1/3 sm:w-20 sm:h-25 rounded-b-full object-cover shadow-md border-2 border-gray-200 dark:border-gray-700 transition-transform hover:scale-110"
+          />
+
+          <!-- Nombre y Etiqueta -->
+          <div class="flex flex-col">
+            <span
+              class="text-lg sm:text-xl font-black tracking-wider uppercase text-black dark:text-white leading-tight"
+              >TATO CAP</span
+            >
+            <span
+              class="text-[10px] bg-black text-white dark:bg-white dark:text-black px-1.5 py-0.2 rounded font-mono w-fit tracking-tighter"
+              >MARCA TU PRESENCIA</span
+            >
+          </div>
+        </div>
+
+        <nav
+          class="hidden md:flex space-x-8 text-sm font-medium text-gray-600 dark:text-gray-300"
+        >
+          <a
+            href="#catalogo"
+            class="hover:text-black dark:hover:text-white transition-colors"
+            >Catálogo</a
+          >
+          <a
+            href="#cotizacion"
+            class="hover:text-black dark:hover:text-white transition-colors"
+            >¿Cómo separar?</a
+          >
+        </nav>
+
+        <div class="flex items-center space-x-3">
+          <!-- Botón Modo Oscuro / Claro -->
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-amber-400 hover:opacity-80 transition-all cursor-pointer"
+            title="Cambiar modo visual"
+          >
+            <svg
+              id="theme-icon"
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              ></path>
+            </svg>
+          </button>
+          <a
+            href="#catalogo"
+            class="bg-black text-white dark:bg-white dark:text-black text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition-all shadow-sm"
+          >
+            Ver Modelos
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      class="relative bg-black text-white py-20 lg:py-28 overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 opacity-20 bg-[radial-gradient(#383838_1px,transparent_1px)] bg-size-[16px_16px]"
+      ></div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+      >
+        <span
+          class="text-xs uppercase tracking-widest bg-white/10 text-gray-300 px-3 py-1.5 rounded-full font-mono mb-4 inline-block"
+          >Colección Oficial 2026</span
+        >
+        <h1
+          class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-3xl mx-auto leading-tight"
+        >
+          Estilo, Identidad y Actitud en Cada Gorra
+        </h1>
+        <p class="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-10">
+          Explora nuestras líneas
+          <strong class="text-white">Agropecuaria</strong> y
+          <strong class="text-white">Urbana</strong>. Selecciona tus favoritas,
+          sepáralas en segundos y coordina tu pedido directamente por WhatsApp.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#catalogo"
+            class="bg-white text-black font-semibold px-8 py-3.5 rounded-xl hover:bg-gray-100 transition-all shadow-lg text-center"
+          >
+            Ver Catálogo y Cotizar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE CATÁLOGO Y FILTROS -->
+    <main id="catalogo" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center mb-10">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white tracking-tight"
+        >
+          Elige tu Línea Favorita
+        </h2>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">
+          Haz clic en las pestañas para cambiar de colección
+        </p>
+
+        <!-- PESTAÑAS DE CATEGORÍA -->
+        <div class="flex justify-center gap-3 mt-6">
+          <button
+            id="tab-agropecuaria"
+            onclick="switchCategory('agropecuaria')"
+            class="tab-btn active border-2 border-black dark:border-white bg-black text-white dark:bg-white dark:text-black px-6 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-sm cursor-pointer"
+          >
+            Línea Agropecuaria
+          </button>
+          <button
+            id="tab-urbana"
+            onclick="switchCategory('urbana')"
+            class="tab-btn border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 px-6 py-2.5 rounded-xl font-semibold text-sm hover:border-black dark:hover:border-white transition-all shadow-sm cursor-pointer"
+          >
+            Línea Urbana
+          </button>
+        </div>
+      </div>
+
+      <!-- GRID DINÁMICO DE PRODUCTOS -->
+      <div
+        id="products-grid"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+      >
+        <!-- Los productos se inyectan automáticamente desde app.js -->
+      </div>
+
+      <!-- PANEL FLOTANTE DE SELECCIÓN Y FORMULARIO DE COTIZACIÓN -->
+      <section
+        id="cotizacion"
+        class="scroll-mt-24 py-12 max-w-4xl mt-16 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-xl p-6 sm:p-10 max-w-3xl mx-auto transition-colors duration-300"
+      >
+        <div
+          class="flex items-center justify-between border-b border-gray-100 dark:border-gray-800 pb-4 mb-6"
+        >
+          <h3
+            class="text-lg font-bold text-gray-900 dark:text-white flex items-center gap-2"
+          >
+            🛒 Tu Selección de Gorras
+          </h3>
+          <span
+            id="selection-counter"
+            class="bg-black text-white dark:bg-white dark:text-black text-xs font-mono font-bold px-3 py-1 rounded-full"
+            >0</span
+          >
+        </div>
+
+        <!-- Resumen cuando está activo -->
+        <div id="selection-summary" class="hidden mb-8">
+          <div
+            id="summary-items"
+            class="space-y-2 mb-4 bg-gray-50 dark:bg-gray-950 p-4 rounded-xl border border-gray-100 dark:border-gray-800"
+          >
+            <!-- Ítems seleccionados -->
+          </div>
+          <div
+            class="flex justify-between items-center font-bold text-base px-2 text-gray-900 dark:text-white"
+          >
+            <span>Total Estimado:</span>
+            <span
+              id="summary-total"
+              class="text-green-600 dark:text-emerald-400 text-lg"
+              >$ 0</span
+            >
+          </div>
+        </div>
+
+        <div
+          id="empty-selection-msg"
+          class="text-center py-6 text-gray-400 text-sm italic"
+        >
+          Aún no has seleccionado ninguna gorra. Explora el catálogo arriba y
+          haz clic en "+ Agregar a mi Separación".
+        </div>
+
+        <!-- FORMULARIO DE DATOS -->
+        <form id="quote-form" class="space-y-4 mt-6 ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label
+                class="block text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider mb-1"
+                >Nombre Completo *</label
+              >
+              <input
+                type="text"
+                id="nombreCliente"
+                required
+                placeholder="Ej: Carlos Pérez"
+                class="w-full px-4 py-2.5 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:outline-none text-sm"
+              />
+            </div>
+            <div>
+              <label
+                class="block text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider mb-1"
+                >Celular / WhatsApp *</label
+              >
+              <input
+                type="tel"
+                id="telefonoCliente"
+                required
+                placeholder="Ej: 3101234567"
+                class="w-full px-4 py-2.5 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:outline-none text-sm"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label
+                class="block text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider mb-1"
+                >Ciudad / Municipio *</label
+              >
+              <input
+                type="text"
+                id="ciudadCliente"
+                required
+                placeholder="Ej: Villavicencio (Meta)"
+                class="w-full px-4 py-2.5 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:outline-none text-sm"
+              />
+            </div>
+            <div>
+              <label
+                class="block text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider mb-1"
+                >Notas / Observaciones</label
+              >
+              <input
+                type="text"
+                id="notasCliente"
+                placeholder="Ej: Pago contra entrega "
+                class="w-full px-4 py-2.5 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:outline-none text-sm"
+              />
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full mt-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-md flex items-center justify-center gap-2 text-sm sm:text-base cursor-pointer"
+          >
+            <span>Enviar Precotización por WhatsApp</span>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+              />
+            </svg>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-12 mt-20 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm font-semibold tracking-wide">SANTAYO EXCLUSIVAS</p>
+        <p class="text-xs text-gray-500 mt-2">
+          © 2026 Todos los derechos reservados. Calidad empresarial en
+          Villavicencio, Colombia.
+        </p>
+      </div>
+    </footer>
+
+    <!-- SCRIPT DE GESTIÓN DE TEMA (MODO OSCURO / CLARO) -->
+    <script>
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const htmlElement = document.documentElement;
+
+      // Cargar preferencia guardada o respetar configuración del sistema operativo
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        htmlElement.classList.add("dark");
+      } else {
+        htmlElement.classList.remove("dark");
+      }
+
+      themeToggleBtn.addEventListener("click", () => {
+        if (htmlElement.classList.contains("dark")) {
+          htmlElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          htmlElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      });
+    </script>
+
+    <!-- SCRIPTS DE LÓGICA COMERCIAL -->
+    <script src="js/logger.js" type="module"></script>
+    <script src="js/catalog-data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
