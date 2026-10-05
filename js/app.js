@@ -215,8 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let total = 0;
         selectedItems.forEach((item) => {
-            mensaje += `• [${item.id}] ${item.name} - $ ${item.price.toLocaleString('es-CO')}\n`;
-            total += item.price;
+            const subtotal = item.product.price * item.quantity;
+            total += subtotal;
+            mensaje += `• [${item.product.id}] ${item.product.name} (${item.quantity} un.) - $ ${subtotal.toLocaleString('es-CO')}\n`;
         });
 
         mensaje += `\n💰 *Total Estimado:* $ ${total.toLocaleString('es-CO')}\n`;
