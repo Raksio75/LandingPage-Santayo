@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mensaje += `_Quedo atento(a) para coordinar el pago y el envío._`;
 
         // WhatsApp corporativo real (Ej: 573232308216)
-        const numeroWhatsApp = "573232308216";
+        const numeroWhatsApp = "573124922470";
         const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
         // 1. Abrir WhatsApp en nueva pestaña
