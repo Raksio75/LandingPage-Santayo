@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
         // 1. Abrir WhatsApp en nueva pestaña
-        window.open(urlWhatsApp, '_blank');
+        window.location.href = urlWhatsApp;
 
         // 2. Limpiar selecciones y formulario para evitar duplicados o datos residuales
         selectedItems.clear();
